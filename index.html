@@ -5,124 +5,150 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Revalia" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/modal.css">
   <link rel="icon"    type="image/icon"  href="images/favicon.png">
-  <title>SeeUS</title>
+  <title>New York Guide</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm  bg-dark   ">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content"
-  aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <!-- Brand -->
-    <a class="navbar-brand" href="#">Logo</a>
-  <!-- Links -->
-    <div class="collapse navbar-collapse justify-content-end" id="nav-content">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Explore</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Eat</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Live</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Calender</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="State To Explore!" aria-label="Search">
-      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-    </form>
-</nav>
-<div class="container hero">
+  <div class="container">
+      <br>
+      <center>
+          <button id="enter" class="btn btn-warning btn-lg main-btn "  data-toggle="modal" data-target=".log-sign">Enter This Way</button>
+     </center>
+    <br>
+  </div>
 
-  <div id="myCarousel" class="carousel slide bg-inverse w-80 h-80 ml-auto mr-auto " data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <img class="d-block w-100 img-thumbnail" src="/images/cr1.jpg" alt="First slide">
-          <div class="carousel-caption">
-            <h3>First slide</h3>
-            <p>This is the first slide.</p>
-          </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100 img-thumbnail" src="/images/cr2.jpg" alt="Second slide">
-          <div class="carousel-caption">
-            <h3>Second slide</h3>
-            <p>This is the second slide.</p>
-          </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100 img-thumbnail" src="/images/cr3.jpg" alt="Third slide">
-          <div class="carousel-caption">
-            <h3>BOSTON</h3>
-            <p>This is the third slide.</p>
-          </div>
+  <!-- Modal -->
+  <div class="modal fade bs-modal-sm log-sign" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+     <div class="modal-content">
+                <div class="bs-example bs-example-tabs">
+                    <ul id="myTab" class="nav nav-tabs">
+                      <li id="tab1" class=" active tab-style login-shadow "><a href="#signin" data-toggle="tab">Log In</a></li>
+                      <li id="tab2" class=" tab-style "><a href="#signup" data-toggle="tab">Sign Up</a></li>
+                    </ul>
+                </div>
+    <div class="modal-body">
+      <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="signin">
+                    <form class="form-horizontal" action="/home.html">
+                      <fieldset>
+                        <!-- Sign In Form -->
+                        <!-- Emial input-->
+                           <div class="group">
+                              <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+                              <label class="label" for="Email">Email address</label>
+                           </div>
+                        <!-- Password input-->
+                            <div class="group">
+                              <input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+                              <label class="label" for="Password">Password</label>
+                            </div>
+                            <em>minimum 6 characters</em>
+                            <div class="forgot-link">
+                              <a href="#forgot" data-toggle="modal" data-target="#forgot-password"> I forgot my password</a>
+                            </div>
+                        <!-- Button -->
+                        <div class="control-group">
+                            <label class="control-label" for="signin"></label>
+                            <div class="controls">
+                              <button id="signin" type="submit" name="signin" class="btn btn-success btn-block">Log In</button>
+                            </div>
+                        </div>
+                      </fieldset>
+                    </form>
+                </div>
+
+
+                <div class="tab-pane fade" id="signup">
+                    <form class="form-horizontal" action="/home.html">
+                        <fieldset>
+                        <!-- Sign Up Form -->
+                        <!-- First Name input-->
+                            <div class="group">
+                              <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+                              <label class="label" for="date">First Name</label>
+                            </div>
+
+                          <!-- Last input-->
+                            <div class="group">
+                              <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+                              <label class="label" for="date">Last Name</label>
+                            </div>
+                          <!-- Password input-->
+                            <div class="group">
+                              <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+                              <label class="label" for="date">Email</label>
+                            </div>
+                          <!-- Text input-->
+                            <div class="group">
+                              <input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+                              <label class="label" for="date">Password</label>
+                            </div>
+                            <em>1-8 Characters</em>
+                            <div class="group2">
+                              <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+                              <label class="label" for="date">Country</label>
+                            </div>
+
+                          <!-- Button -->
+                            <div class="control-group">
+                              <label class="control-label" for="confirmsignup"></label>
+                              <div class="controls">
+                                <button id="confirmsignup" name="confirmsignup" class="btn btn-success btn-block">Sign Up</button>
+                              </div>
+                            </div>
+                        </fieldset>
+                    </form>
+               </div>
+           </div>
+        </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
 
 
-</div>
-<footer id="footer" role="contentinfo">
-        <div class="footer-inner">
-          <div class="nav-wrapper back-to-top-nav"><nav><div class="back-to-top"><a href="#header">Back to Top</a></div></nav></div>
+  <!--modal2-->
 
-          <div id="siteInfo"><span class="site-address"> Footer Details GOes here</span><span rel="tel" class="site-phone">--Phone Number</span></div>
-          <div class="sqs-layout sqs-grid-12 columns-12 empty" data-layout-label="Footer Content" data-type="block-field" data-updated-on="1452879019844" id="footerBlocks"><div class="row sqs-row"><div class="col sqs-col-12 span-12"></div></div></div>
+  <div class="modal fade bs-modal-sm" id="forgot-password" tabindex="0" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Password will be sent to your email</h4>
         </div>
-      </footer>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <fieldset>
+              <div class="group">
+                <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+                <label class="label" for="date">Email address</label>
+              </div>
+              <div class="control-group">
+                  <label class="control-label" for="forpassword"></label>
+                  <div class="controls">
+                    <button id="forpasswodr" name="forpassword" class="btn btn-primary btn-block">Send</button>
+                  </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
 
+    </div>
+ </div>
+<div id="j-main" class="jumbotron j-main display-1">
+  Wanna peep inside, The City of Dream
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="js/modal.js"></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.js></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+
+
 </body>
 </html>
