@@ -1,7 +1,10 @@
 
 .main-btn{
-  background-color: #e15f41;
+  background-color: #FFC107;
   border: none;
+}
+.dream{
+      color: #009432;
 }
 .tab-style{
   font-size:20px;

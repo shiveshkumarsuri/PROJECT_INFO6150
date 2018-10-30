@@ -4,20 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/main.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Revalia" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="icon"    type="image/icon"  href="images/favicon.png">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="icon"    type="image/icon"  href="images/favicon-o.png">
   <title>New York Guide</title>
+
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm  bg-dark   ">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content"
-  aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <nav class="navbar navbar-expand-sm  navbar-light bg-primary nav-coll ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content"
+    aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon custom-image"></span>
+    </button>
+
   <!-- Brand -->
-    <a class="navbar-brand" href="#">Logo</a>
+  <a class="navbar-brand " href="home.html"> <img src="images/favicon-o.png" class="logo-nyg" alt="Logo"></a>
+
   <!-- Links -->
     <div class="collapse navbar-collapse justify-content-end" id="nav-content">
       <ul class="navbar-nav">
@@ -42,26 +50,19 @@
 <div class="container">
       <div class="jumbotron j5">
       <h1>Who Are We ?</h1>
-      <p>	<center><strong>About TripAdvisor,the world's largest travel site*, enables travelers to unleash the
-								 full potential of every trip. With approximately 661 million reviews and opinions covering the \
-							  world's larges selection of travel listings worldwide – covering approximately 7.7 million accommodations,
-							 airlines, experiences, and restaurants -- TripAdvisor provides travelers with the wisdom of the crowds to help
-							them decide where to stay, how to fly, what to do and where to eat. TripAdvisor also compares prices from more than
-						  	200 hotel booking sites so travelers can find the lowest price on the hotel that's right for them. TripAdvisor-branded
-						  	sites are available in 49 markets, and are home to the world's largest travel community of 456 million average monthly
-						  	unique visitors**,all looking to get the most out of every trip.TripAdvisor: Know better. Book better. Go better.The
-								subsidiaries and affiliates of TripAdvisor, Inc. (NASDAQ: TRIP) own and operate a portfolio of websites and
-										businesses,including more than 20 travel media brands:</strong></center></p>
+      <p>	<center><strong>
+About New York Guide, the Cities largest travel site* enables travellers to unleash the full potential of every trip. With approximately 661 million reviews and opinions covering the world's largest selection of travel listings worldwide – covering approximately 7.7 million accommodations, airlines, experiences, and restaurants -- NewYork provides travellers with the wisdom of the crowds to help them decide where to stay, how to fly, what to do and where to eat. New York guide also compares prices from more than 200 hotel booking sites so travellers can find the lowest price on the hotel that's right for them. NewYork-branded sites are available in 49 markets, and are home to the world's largest travel community of 456 million average monthly unique visitors**, all looking to get the most out of every trip. New York Guide: Know better. Book better. Go better. The subsidiaries and affiliates of New York, Inc. (NASDAQ: TRIP) own and operate a portfolio of websites and businesses, including more than 20 travel media brands
+</strong></center></p>
       </div>
-</div>
+
 
 
 <div class="row justify-content-around" >
 	<div class="col-md-3">
 			<div class="card">
 					<div class="card-header">
-						<strong>Shivesh Kumar</strong>
-						<small>President & CEO</small>
+            <h4 class="card-title">Shivesh Kumar</h4>
+            <h6 class="card-subtitle text-muted">UI Designer</h6>
 					</div>
 					<div class="card-body">
 				  	<img alt="Card image cap" class="card-img-top img-fluid" src="images/pp1.jpg" />
@@ -75,26 +76,28 @@
 		<div class="col-md-3">
 			<div class="card">
 					<div class="card-header">
-						<strong>Saikumar Katepalli</strong>
-						<small>President & CEO</small>
+						<h4 class="card-title">Saikumar Katepalli</h4>
+            <h6 class="card-subtitle text-muted">Backend PHP</h6>
 					</div>
 					<div class="card-body">
 				  	<img alt="Card image cap" class="card-img-top img-fluid" src="images/pp2.jpg" />
 						<p class="card-text"></p>
 					</div>
 					<div class="card-footer">
-						JUNA LAUNDA :)))
+						Role
 					</div>
 			</div>
 		</div>
 		<div class="col-md-3">
 			<div class="card">
 					<div class="card-header">
-						<strong>Krishna Vikash</strong>
-						<small>President & CEO</small>
+
+            <h4 class="card-title">Krishna Vikash</h4>
+            <h6 class="card-subtitle text-muted">Angular Expert</h6>
+
 					</div>
 					<div class="card-body">
-				  	<img alt="Card image cap" class="card-img-top img-fluid" src="Saikumar.jpg" />
+				  	<img alt="Card image cap" class="card-img-top img-fluid" src="images/pp3.jpg" />
 						<p class="card-text"></p>
 					</div>
 					<div class="card-footer">
@@ -108,6 +111,7 @@
 
 </div>
 
+
 <footer id="footer" role="contentinfo">
         <div class="footer-inner">
           <div class="nav-wrapper "><nav><div><a href="#header">Back to Top</a></div></nav></div>
@@ -118,9 +122,10 @@
             class="mailto">Shivesh@nyg</a>
           </span>
         </div>
+
 </footer>
 
-
+<script src="js/modal.js"></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.js></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
