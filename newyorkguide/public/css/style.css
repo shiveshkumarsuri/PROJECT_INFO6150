@@ -4,4 +4,43 @@
 }
 .bg-main{
     background-color: #0c1a1e;
+    margin-bottom: 30px !important;
 }
+#myCarousel{
+    margin-bottom: 30px;
+}
+/* .navbar{
+    margin-bottom: 20px;
+} */
+@media only screen and (max-width: 600px) {
+.carousel-indicators{
+    visibility: hidden;
+    }
+.carousel-control-prev{
+    visibility: hidden;
+    }
+.carousel-control-next{
+    visibility: hidden;
+    }
+.img-thumbnail {
+    padding: 0.0rem;
+    border-radius: 0;
+    }
+    
+}
+@media only screen and (max-width: 991px) {
+
+    .carousel-inner {
+        width: 100%;
+           height: auto !important;
+       }
+
+}
+.grad{
+    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+  }
+  .carousel-inner {
+    width: 100%;
+    height: 450px;
+   }
+  

@@ -17,17 +17,26 @@ body{
 .navbar-toggle .icon-bar {
     background-color: #fff;
 }
+/* .jumbotron {
+  padding: 1rem 1rem !important;
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+ 
+} */
+
+.grad{
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+}
 .j1{
-  background-color: rgba(248, 239, 186,1.0);
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
 }
 .j2{
-  background-color: #FFEB3B;
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
 }
 .j3{
-  background-color:rgba(234, 181, 67,1.0);
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
 }
 .j4{
-  background-color:  #FFC107;
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
 
 }
 .j5{
@@ -106,15 +115,20 @@ body{
 
 /* Styles for the content section */
 
-.content {
 
-}
 @media (min-width: 500px) {
   .content {
     width: 43%;
   }
   #b1 {
     margin: 30px;
+  }
+}
+@media (min-width: 576px)
+{
+  .jumbotron {
+      padding: 1rem 1rem !important;
+      background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
   }
 }
 .content h1 {
