@@ -15,8 +15,8 @@ const session = require('express-session');
 // It initialize our application 
 const app = express(); 
 
-//Load Ideas Routes
-const ideas = require('./routes/ideas');
+//Load Manu Routes
+const menu = require('./routes/menu');
 
 //Load User Routes
 const users = require('./routes/users');
@@ -103,8 +103,8 @@ app.get('/about',(req, res)=>{
 });
 
    
-// Use ideas routes
-app.use('/ideas', ideas);
+// Use Menu routes
+app.use('/menu', menu);
 
 //Use users routes
 app.use('/users', users);
