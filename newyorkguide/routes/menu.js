@@ -72,6 +72,12 @@ router.get('/restaurants',ensureAuthenticated,(req, res) =>{
 
    });
 
+   //Attractions
+   router.get('/attractions',ensureAuthenticated,(req, res) =>{
+    res.render('menu/attractions');
+
+   });
+
 //Night Life
 router.get('/nightlife',ensureAuthenticated,(req, res) =>{
     res.render('menu/nightlife');

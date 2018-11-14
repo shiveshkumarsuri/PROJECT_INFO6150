@@ -141,4 +141,37 @@
 	    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important; 
 	}
 }
-
+  
+  .shopping .heading{
+      margin-bottom: 50px;
+      text-align: center;
+  }
+  
+  .shopping .heading h2{
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+  }
+  
+  .shopping a:hover{
+    opacity: 0.7;
+  }
+  
+  .shopping .item img{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+  }
+  
+  .shopping .item{
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 576px) {
+      .image{
+      float:right;
+      }
+    .shopping .scale-on-hover:hover{
+      transform: scale(1.05);
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
+    }
+  }
