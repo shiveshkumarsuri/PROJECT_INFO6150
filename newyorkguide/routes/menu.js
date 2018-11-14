@@ -89,6 +89,17 @@ router.get('/calender',ensureAuthenticated,(req, res) =>{
     res.render('menu/calender');
 
    });
+//ArtGallery
+router.get('/artgallery',ensureAuthenticated,(req, res) =>{
+    res.render('menu/artgallery');
+
+   });
+
+//Shopping
+   router.get('/shopping',ensureAuthenticated,(req, res) =>{
+    res.render('menu/shopping');
+
+   });
 
 //Process Form a Post Request form Form Submit
 router.post('/', ensureAuthenticated, (req, res) =>{
